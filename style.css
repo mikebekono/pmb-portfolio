@@ -1,0 +1,101 @@
+*{
+    font-family: Poppins;
+}
+
+body {
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    word-spacing: 0.2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.navs {
+    display: flex;
+}
+.navs li {
+    margin: 26px;
+}
+.navs a {
+    color: #fff;
+}
+.navs li a {
+    position: relative;
+}
+
+.navs li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: violet;
+    height: 4px;
+    width: 0%;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.navs li a:hover:after {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+}
+.social li {
+    margin: 10px;
+}
+
+.social a.whatsapp {
+    color: green;
+}
+.social a.linkedin {
+    color: #fff;
+}
+.social a.github {
+    color: #fff;
+}
+
+.texte {
+    position: absolute;
+    padding: 7% 20%;
+    margin: 50px;
+}
+.texte h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+.texte p {
+    margin-top: -20px;
+    color: pink;
+}
+
+.cadre {
+    position: absolute;
+    padding: 0% 20%;
+    margin: 10%;
+    margin-left: 34%;
+}
+.cadre img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.boutons .bouton {
+    padding: 6px 10px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 30px;
+    color: pink;
+}
+

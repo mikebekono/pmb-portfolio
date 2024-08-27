@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    background-size: auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.navs {
+    display: flex;
+}
+.navs li {
+    margin: 25px;
+}
+.navs a {
+    color: #fff;
+}
+.navs li a {
+    position: relative;
+}
+
+.navs li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: violet;
+    height: 4px;
+    width: 0%;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.navs li a:hover:after {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+}
+.social li {
+    margin: 25px;
+}
+.social a {
+    color: blue;
+}
+.social a.whatsapp {
+    color: green;
+}
+.social a.linkedin {
+    color: #fff;
+}
+.social a.github {
+    color: #fff;
+}
+
+/*Intro*/
+.intro {
+    padding: 7% 40%;
+    background: url('images/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 269px;
+}
+.intro h1 {
+    color: #fff;
+    width: 290px;
+}
+.intro p {
+    color: pink;
+    width: 290px;
+}
+
+.infos {
+    position: absolute;
+}
+
+.moi {
+    margin: 70px 250px;
+}
+.moi p {
+    margin: 10px;
+}
+.small_title {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative; 
+    width: -moz-fit-content; width: fit-content;
+}
+
+.small_title::before {
+    content: "";
+    position: absolute;
+    background: rgb(107, 50, 107);
+    left: -35px;
+    bottom: 10px;
+    width: 25px;
+    height: 2px;
+    border-radius: 6px;
+}
+.me .style {
+    color: blueviolet;
+}
+.link .styles {
+    color: blue;
+}
+.text .styles {
+    color: blue;
+}
+
+.comp {
+    margin: 70px 250px;
+}
+.comp .list {
+    margin: 10px;
+    display: contents;
+    list-style: inside;
+    justify-content: space-between;
+}
+
+.exp {
+    margin: 70px 250px;
+}
+.exp ul {
+    margin: 10px;
+}
