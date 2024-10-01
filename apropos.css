@@ -69,9 +69,16 @@ a {
     color: #fff;
 }
 
+.bars_btn, .links_btn {
+    display: none;
+}
+.naving, .sociale {
+    display: none;
+}
+
 /*Intro*/
 .intro {
-    padding: 7% 40%;
+    padding: 7% 39.97%;
     background: url('images/bg.jpeg');
     background-size: cover;
     background-position: center;
@@ -87,6 +94,7 @@ a {
     width: 290px;
 }
 
+/*Infos*/
 .infos {
     position: absolute;
 }
@@ -140,4 +148,175 @@ a {
 }
 .exp ul {
     margin: 10px;
+}
+
+/* RESPONSIVE DESIGN - A propos */
+@media screen and (max-width: 900px) {
+    header {
+        width: 100%;
+    }
+    nav {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    backdrop-filter: blur(15px);
+    }
+    .navs, .social, .bars_btn {
+        display: none;
+    }
+    .bars_btn, .links_btn {
+        display: block;
+        color: white;
+        padding: 30px;
+    }
+
+    .naving {
+        display: block;
+        position: absolute;
+        left: 4rem;
+        top: 30px;
+        height: 0;
+        width: 100px;
+        background-color: rgb(46, 43, 43);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .naving.open {
+        height: 140px;
+    }
+    .naving li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .naving a {
+        color: #fff;
+    }
+    .naving li a {
+        position: relative;
+        transition: all 0.2s ease;
+        box-shadow: none;
+    }
+    .naving li a:hover {
+        transform: scale(0.9) translateY(-4px);
+        box-shadow: 0 2px 100px rgba(0, 0, 0, 0.3);
+    }
+    
+    .sociale {
+        display: block;
+        position: absolute;
+        right: 4rem;
+        top: 30px;
+        height: 0;
+        width: 100px;
+        background-color: rgb(46, 43, 43);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .sociale.open {
+        height: 190px;
+    }
+    .sociale li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sociale li a {
+        transition: all 0.2s ease;
+        box-shadow: none;
+    }
+    .sociale li a:hover {
+        transform: scale(1.3) translateY(-4px);
+        box-shadow: 0 2px 100px rgba(0, 0, 0, 0.3);
+    }
+    .sociale a.whatsapp {
+        color: green;
+    }
+    .sociale a.linkedin {
+        color: white;
+    }
+    .sociale a.github {
+        color: white;
+    }
+
+    /*Intro*/
+    .intro {
+        width: 100%;
+        padding: 7% 0%;
+        background: url('images/bg.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+    .intro h1 {
+        color: #fff;
+        width: 100%;
+
+    }
+    .intro p {
+        color: pink;
+        width: 100%;
+    }
+
+    /*Infos*/
+    .infos {
+        position: absolute;
+    }
+
+    .moi {
+        margin: 70px 70px;
+    }
+    .moi p {
+        margin: 10px 30px;
+    }
+    .small_title {
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 2px;
+        position: relative; 
+        width: -moz-fit-content; width: fit-content;
+    }
+
+    .small_title::before {
+        content: "";
+        position: absolute;
+        background: rgb(107, 50, 107);
+        left: -35px;
+        bottom: 10px;
+        width: 25px;
+        height: 2px;
+        border-radius: 6px;
+    }
+    .me .style {
+        color: blueviolet;
+    }
+    .link .styles {
+        color: blue;
+    }
+    .text .styles {
+        color: blue;
+    }
+
+    /*Competences*/
+    .comp {
+        margin: 70px 70px;
+    }
+    .comp .list {
+        margin: 10px;
+        display: contents;
+        list-style: inside;
+        justify-content: space-between;
+    }
+    
+    /*Experience*/
+    .exp {
+        margin: 70px 70px;
+    }
+    .exp ul {
+        margin: 10px;
+    }
 }

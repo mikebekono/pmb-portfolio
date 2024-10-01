@@ -17,12 +17,21 @@
                 <li><a href="projets.html">Projets</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
+
+            <div class="bars_btn">
+                <i class="icon-bars"></i>
+            </div>
+
             <ul class="social">
                 <li><a title="Facebook" href="https://www.facebook.com/profile.php?id=100082251555122&mibextid=LQQJ4d"><i class="icon-facebook-square"></i></a></li>
                 <li><a title="Whatsapp" class="whatsapp" href="https://wa.me/237654152499"><i class="icon-whatsapp"></i></a></li>
                 <li><a title="Linkedin" class="linkedin" href="https://www.linkedin.com/in/prince-michel-bekono-27331725a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="icon-linkedin"></i></a></li>
                 <li><a title="Github" class="github" href="https://github.com/mikebekono"><i class="icon-github"></i></a></li>
             </ul>
+
+            <div class="links_btn">
+                <i class="icon-link"></i>
+            </div>
         </nav>
     </header>
 
@@ -39,5 +48,37 @@
     <div class="cadre">
         <img src="images/img.jpg" alt="Image">
     </div>
+
+    <div class="naving">
+        <li><a href="">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+    </div>
+
+    <div class="sociale">
+        <li><a title="Facebook" href="https://www.facebook.com/profile.php?id=100082251555122&mibextid=LQQJ4d"><i class="icon-facebook-square"></i></a></li>
+        <li><a title="Whatsapp" class="whatsapp" href="https://wa.me/237654152499"><i class="icon-whatsapp"></i></a></li>
+        <li><a title="Linkedin" class="linkedin" href="https://www.linkedin.com/in/prince-michel-bekono-27331725a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="icon-linkedin"></i></a></li>
+        <li><a title="Github" class="github" href="https://github.com/mikebekono"><i class="icon-github"></i></a></li>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.bars_btn')
+        const toggleBtnIcon = document.querySelector('.bars_btn i')
+        const naving = document.querySelector('.naving')
+
+        toggleBtn.onclick = function () {
+            naving.classList.toggle('open')
+        }
+    </script>
+    <script>
+        const doggleBtn = document.querySelector('.links_btn')
+        const doggleBtnIcon = document.querySelector('.links_btn i')
+        const sociale = document.querySelector('.sociale')
+
+        doggleBtn.onclick = function () {
+            sociale.classList.toggle('open')
+        }
+    </script>
 </body>
 </html>

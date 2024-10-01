@@ -17,12 +17,22 @@
                 <li><a href="">Projets</a></li>
                 <li><a href="apropos.html">À propos</a></li>
             </ul>
+
+            <div class="bars_btn" title="Menu">
+                <i class="icon-bars"></i>
+            </div>
+
             <ul class="social">
                 <li><a title="Facebook" href="https://www.facebook.com/profile.php?id=100082251555122&mibextid=LQQJ4d"><i class="icon-facebook-square"></i></a></li>
                 <li><a title="Whatsapp" class="whatsapp" href="https://wa.me/237654152499"><i class="icon-whatsapp"></i></a></li>
                 <li><a title="Linkedin" class="linkedin" href="https://www.linkedin.com/in/prince-michel-bekono-27331725a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="icon-linkedin"></i></a></li>
                 <li><a title="Github" class="github" href="https://github.com/mikebekono"><i class="icon-github"></i></a></li>
             </ul>
+
+            <div class="links_btn" title="Liens">
+                <i class="icon-link"></i>
+            </div>
+
         </nav>
         <div class="intro">
             <h1> Mes Réalisations </h1>
@@ -33,39 +43,54 @@
     <section class="mes_projets">
         <div class="projet">
             <div class="bloc-a">
-                <h2> Mon Portfolio </h2>
+                <h2>1- Mon Portfolio</h2>
                 <p class="details"> Ce site présente mes activités et
                     <br> les différents projets en cours et ceux déjà réalisés.</p>
 
                 <p>Durée : 05 jours</p>
-                <p>Technologies utilisées : <i class="icon-html5"> HTML</i>, <i class="icon-css3"> CSS</i></p>
+                <p>Technologies utilisées : <i class="icon-html5"> HTML</i>, <i class="icon-css3"> CSS</i>, JavaScript</p>
                 <p class="liv">Livraison : <span class="style">Terminé</span></p>
 
-                <p class="link"> Lien : <a title="lien" class="styles" href="https://mikebekono.github.io/pmb-portfolio/">https://mikebekono.github.io/pmb-portfolio</a></p>
+                <p class="link"> Lien : <a title="lien" class="styles" href="https://mikebekono.netlify.app">https://mikebekono.netlify.app</a></p>
             </div>
             <div class="bloc-b">
-                <img src="images/img-projet1.jpeg" alt="Image-projet 1">
+                <img src="images/img-projet1.jpeg" alt="Image-projet 1" loading="lazy">
             </div>
         </div>
         <div class="projet">
             <div class="bloc-a">
-                <h2> Site web MICHEL DESIGN </h2>
+                <h2>2- Site web MICHEL DESIGN </h2>
                 <p class="details"> C'est un site web vitrine de l'agence MICHEL DESIGN
                     <br> qui renseigne sur les services qu'elle propose. </p>
                 
-                <p>Durée : /</p>
+                <p>Durée : (Non définie)</p>
                 <p>Technologies utilisées : <i class="icon-html5"> HTML</i>, <i class="icon-css3"> CSS</i>, JavaScript, PHP</p>
                 <p class="live">Livraison : <span class="style">En cours</span></p>
 
                 <p class="link"> Lien : <a title="lien" class="styles" href="">https://www.micheldesign.github.io/...</a></p>
             </div>
             <div class="bloc-b">
-                <img src="images/img-projet2.jpg" alt="Image-projet 2">
+                <img src="images/img-projet2.jpg" alt="Image-projet 2" loading="lazy">
             </div>
         </div>
         <div class="projet">
             <div class="bloc-a">
-                <h2> Projet 3 </h2>
+                <h2>3- KSoft </h2>
+                <p class="details"> C'est une boutique en ligne qui offre ses services dans l'achat d'appareil informatique </p>
+
+                <p>Durée : (Non définie)</p>
+                <p>Technologies utilisées : /</p>
+                <p class="live">Livraison : <span class="">En cours</span></p>
+
+                <p class="link"> Lien : <a title="lien" class="styles" href=""></a></p>
+            </div>
+            <div class="bloc-b">
+                <img src="images/img-projet3.png" alt="Image-projet 3" loading="lazy">
+            </div>
+        </div>
+        <div class="projet">
+            <div class="bloc-a">
+                <h2>4- Projet4 </h2>
                 <p class="details"> les détails du projet 3 </p>
 
                 <p>Durée : /</p>
@@ -75,10 +100,43 @@
                 <p class="link"> Lien : <a title="lien" class="styles" href=""></a></p>
             </div>
             <div class="bloc-b">
-                <img src="images/1e4e4962c45b4c0192ccdbbe737916e0.jpg" alt="Image-projet 3">
+                <img src="images/1e4e4962c45b4c0192ccdbbe737916e0.jpg" alt="Image-projet 3" loading="lazy">
             </div>
         </div>
     </section>
+
+    <div class="naving">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="">Projets</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+    </div>
+
+    <div class="sociale">
+        <li><a title="Facebook" href="https://www.facebook.com/profile.php?id=100082251555122&mibextid=LQQJ4d"><i class="icon-facebook-square"></i></a></li>
+        <li><a title="Whatsapp" class="whatsapp" href="https://wa.me/237654152499"><i class="icon-whatsapp"></i></a></li>
+        <li><a title="Linkedin" class="linkedin" href="https://www.linkedin.com/in/prince-michel-bekono-27331725a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="icon-linkedin"></i></a></li>
+        <li><a title="Github" class="github" href="https://github.com/mikebekono"><i class="icon-github"></i></a></li>
+    </div>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.bars_btn')
+        const toggleBtnIcon = document.querySelector('.bars_btn i')
+        const naving = document.querySelector('.naving')
+
+        toggleBtn.onclick = function () {
+            naving.classList.toggle('open')
+        }
+    </script>
+    <script>
+        const doggleBtn = document.querySelector('.links_btn')
+        const doggleBtnIcon = document.querySelector('.links_btn i')
+        const sociale = document.querySelector('.sociale')
+
+        doggleBtn.onclick = function () {
+            sociale.classList.toggle('open')
+        }
+    </script>
 
 </body>
 </html>
